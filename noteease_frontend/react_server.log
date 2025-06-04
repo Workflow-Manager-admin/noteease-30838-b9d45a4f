@@ -18,3 +18,17 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 
 webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve './components/MainContainer/MainContainer' in '/home/kavia/workspace/code-generation/noteease-30838-b9d45a4f/noteease_frontend/src'
+ERROR in ./src/App.js 6:0-69
+Module not found: Error: Can't resolve './components/MainContainer/MainContainer' in '/home/kavia/workspace/code-generation/noteease-30838-b9d45a4f/noteease_frontend/src'
+
+webpack compiled with 1 error
