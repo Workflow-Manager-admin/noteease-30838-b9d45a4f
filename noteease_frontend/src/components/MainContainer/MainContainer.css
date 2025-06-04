@@ -1,0 +1,123 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 0; /* Header will have its own padding */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px; /* Consistent with App.css .container if desired */
+  margin: 0 auto;
+}
+
+.app-header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0 -20px; /* Extend to full width if main-container has padding */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.search-bar-container {
+  width: 100%;
+  max-width: 600px; /* Limit search bar width */
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 20px; /* Pill shape */
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  box-shadow: 0 1px 3px var(--shadow-color);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.3); /* Accent color focus */
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap; /* Allow chips to wrap on smaller screens */
+  gap: 10px;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  justify-content: center; /* Center chips */
+}
+
+.category-chip {
+  padding: 8px 16px;
+  border-radius: 16px; /* Pill shape */
+  background-color: var(--card-background);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.category-chip:hover {
+  background-color: var(--border-color);
+  border-color: var(--text-secondary);
+}
+
+.category-chip.active {
+  background-color: var(--accent-color);
+  color: var(--text-color); /* Or --secondary-color if accent is light */
+  border-color: var(--accent-color);
+  font-weight: 600;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  width: 100%;
+}
+
+.no-notes-message {
+  grid-column: 1 / -1; /* Span all columns */
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  padding: 40px 0;
+}
+
+.fab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 2.5rem; /* Make '+' larger */
+  line-height: 55px; /* Adjust for vertical centering of '+' */
+  text-align: center;
+  border: none;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  z-index: 900; /* Below modal but above other content */
+}
+
+.fab:hover {
+  background-color: #1565C0; /* Darker primary */
+  transform: scale(1.05);
+}

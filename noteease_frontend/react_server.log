@@ -44,3 +44,18 @@ ERROR in ./src/components/MainContainer/MainContainer.js 9:0-29
 Module not found: Error: Can't resolve './MainContainer.css' in '/home/kavia/workspace/code-generation/noteease-30838-b9d45a4f/noteease_frontend/src/components/MainContainer'
 
 webpack compiled with 1 error and 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/MainContainer/MainContainer.js
+  Line 40:6:  React Hook useEffect has a missing dependency: 'selectedCategory'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/MainContainer/MainContainer.js
+  Line 40:6:  React Hook useEffect has a missing dependency: 'selectedCategory'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
